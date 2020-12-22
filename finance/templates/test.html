@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Test
+{% endblock %}
+
+{% block main %}
+    <ul>
+        {% for t in trans %}
+        <li>{{ t['symbol'].upper() }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
